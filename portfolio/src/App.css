@@ -1,3 +1,10 @@
+.body {
+  color: rgb(0, 81, 129);
+  width: 100%;
+  height: 100%;
+
+}
+
 /* Style for Navigation Bar */
 
 .navBar {
@@ -26,16 +33,21 @@
 
 .linkNav {
   display: inline-flex;
-  padding: 10px;
-  text-align: end;
+  text-align: center;
   font-size: 30px;
-  margin-left: 330px;
+  margin-left: 237px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(0, 81, 129);
 }
 
-.linksNav {
-  margin-left: 120px;
+
+.links {
+  margin-left: 60px;
+  color: rgb(0, 81, 129);
+}
+
+.links:hover {
+  color: rgb(81, 179, 236);
 }
 
 /* Style for Home Page */
@@ -44,7 +56,7 @@
   font-size: 40px;
   padding: 40px;
   margin-left: 30px;
-  margin-top: 250px;
+  margin-top: 395px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
 }
@@ -55,4 +67,158 @@
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
+}
+
+/* Style for About Me Page */
+
+.titleAbout {
+  font-size: 40px;
+  margin-left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.textAbout {
+  font-size: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.imageAbout {
+  height: 200px;
+  margin-left: 600px;
+}
+
+.divAbout {
+  display: flex;
+  padding: 10px;
+  padding-left: 40px;
+  margin-top: 395px;
+}
+
+/* Style for Projects Page */
+
+.titleProjects {
+  font-size: 40px;
+  padding: 40px;
+  margin-left: 30px;
+  margin-top: 395px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.textProjects {
+  font-size: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.imageProjects {
+  height: 200px;
+  margin-left: 600px;
+  margin-top: 420px;
+  position: relative;
+}
+
+/* Style for Education Page */
+
+.titleEducation {
+  font-size: 40px;
+  padding: 40px;
+  margin-left: 30px;
+  margin-top: 395px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.textEducation {
+  font-size: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.imageEducation {
+  height: 200px;
+  margin-left: 800px;
+  margin-top: 420px;
+  position: fixed;
+}
+
+.listEducation {
+  font-size: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+/* Style for Services Page */
+
+.titleServices {
+  font-size: 40px;
+  padding: 40px;
+  margin-left: 30px;
+  margin-top: 395px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.textServices {
+  font-size: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.imageServices {
+  height: 200px;
+  margin-left: 800px;
+  margin-top: 420px;
+  position: relative;
+}
+
+/* Style for Contact Page */
+
+.titleContact {
+  font-size: 40px;
+  padding: 40px;
+  margin-left: 30px;
+  margin-top: 395px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.textContact {
+  font-size: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+/* Style for Footer */
+
+.footer {
+  height: 80px;
+  width: 100vw;
+  background-Color: lightblue;
+  position: static;
+  bottom: 0;
+  left: 0;
+  padding-top: 35px;
+}
+
+.footerText {
+  padding-right: 70px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  text-align: right;
 }

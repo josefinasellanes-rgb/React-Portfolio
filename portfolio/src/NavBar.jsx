@@ -1,7 +1,7 @@
 import React from 'react';
-import { useState } from 'react'
-import { Link } from 'react'
-import './App.css'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './App.css';
 
 
 export default function NavBar() {
@@ -16,15 +16,14 @@ export default function NavBar() {
             </div>
 
             <div className="linkNav">
-                {/* <Link to="/Home">Home</Link> */}
-                <p className="linksNav">link 1</p>
-                <p className="linksNav">link 1</p>
-                <p className="linksNav">link 1</p>
-                <p className="linksNav">link 1</p>
-                <p className="linksNav">link 1</p>
-                <p className="linksNav">link 1</p>
+                <Link to="./Home" className='links'>Home</Link >
+                <Link to="./About" className='links'>About Me</Link>
+                <Link to="./Project" className='links'>Projects</Link>
+                <Link to="./Education" className='links'>Education</Link>
+                <Link to="./Services" className='links'>Services</Link>
+                <Link to="./Contact" className='links'>Contact Me</Link>
             </div>
-        </div >
+        </div>
     );
 }
 
