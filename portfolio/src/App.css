@@ -1,0 +1,58 @@
+/* Style for Navigation Bar */
+
+.navBar {
+  height: 300px;
+  width: 100%;
+  background-Color: lightblue;
+  padding-bottom: 70px;
+  position: fixed;
+  top: 0;
+}
+
+.topNav {
+  display: flex;
+  padding: 10px;
+  margin-left: 60px;
+}
+
+.titleNav {
+  font-Size: 50px;
+  text-Align: center;
+  padding: 50px;
+  padding-left: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(0, 81, 129);
+}
+
+.linkNav {
+  display: inline-flex;
+  padding: 10px;
+  text-align: end;
+  font-size: 30px;
+  margin-left: 330px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(0, 81, 129);
+}
+
+.linksNav {
+  margin-left: 120px;
+}
+
+/* Style for Home Page */
+
+.titleHome {
+  font-size: 40px;
+  padding: 40px;
+  margin-left: 30px;
+  margin-top: 250px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.textHome {
+  font-size: 30px;
+  margin-left: 40px;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
