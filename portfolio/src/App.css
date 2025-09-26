@@ -1,8 +1,11 @@
-.body {
-  color: rgb(0, 81, 129);
+.App {
+  background-color: rgb(0, 81, 129);
   width: 100%;
   height: 100%;
+}
 
+.wrapper {
+  padding: 20px;
 }
 
 /* Style for Navigation Bar */
@@ -35,15 +38,18 @@
   display: inline-flex;
   text-align: center;
   font-size: 30px;
-  margin-left: 237px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(0, 81, 129);
+  color: lightblue;
+  background-color: rgb(0, 81, 129);
+  padding: 25px;
+  padding-left: 237px;
+  width: 100%;
 }
 
 
 .links {
   margin-left: 60px;
-  color: rgb(0, 81, 129);
+  color: lightblue;
 }
 
 .links:hover {
@@ -119,9 +125,18 @@
 
 .imageProjects {
   height: 200px;
-  margin-left: 600px;
-  margin-top: 420px;
-  position: relative;
+  width: 300px;
+  margin-left: 400px;
+}
+
+.projects {
+  padding-left: 40px;
+  list-style-type: none;
+}
+
+.divProjects {
+  display: flex;
+  padding: 10px;
 }
 
 /* Style for Education Page */
@@ -179,18 +194,33 @@
 
 .imageServices {
   height: 200px;
-  margin-left: 800px;
-  margin-top: 420px;
-  position: relative;
+  width: 300px;
+  margin-left: 100px;
+}
+
+.services {
+  padding-left: 40px;
+  list-style-type: none;
+}
+
+.divServices {
+  display: flex;
+  padding: 10px;
 }
 
 /* Style for Contact Page */
+.div {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 395px;
+  padding: 30px;
+}
 
 .titleContact {
   font-size: 40px;
-  padding: 40px;
+  padding: 20px;
   margin-left: 30px;
-  margin-top: 395px;
+
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
 }
@@ -198,10 +228,111 @@
 .textContact {
   font-size: 30px;
   margin-left: 40px;
-  padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
 }
+
+.contact {
+  font-size: 30px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+  background-color: rgb(0, 81, 129);
+  width: fit-content;
+  margin-left: 110px;
+}
+
+.form {
+  font-size: 15px;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  background-color: lightblue;
+  border: 2px solid rgb(11, 66, 98);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 250px;
+}
+
+.inputs {
+  padding: '10px';
+  border: '1px solid #ccc';
+  border-radius: '8px';
+  text-align: center;
+
+}
+
+.name {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.lastname {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.email {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.number {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.textarea {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.button {
+  font-size: 20px;
+  background-color: rgb(0, 81, 129);
+  color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+button:hover {
+  color: rgb(0, 81, 129);
+  background-color: rgb(120, 197, 222);
+}
+
+button:active {
+  background-color: rgb(4, 41, 62);
+  box-shadow: 0 2px rgb(11, 66, 98);
+  transform: translateY(4px);
+  color: lightblue;
+}
+
 
 /* Style for Footer */
 

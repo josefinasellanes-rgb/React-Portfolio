@@ -5,26 +5,30 @@ import './App.css';
 export default function Services() {
 
     return (
-        <>
+        <div className='wrapper'>
             <h1 className='titleServices'>Services</h1>
             <p className='textServices'>These are some of my services:</p>
+            <ul className='services'>
+                <li>
+                    <div className='divServices'>
+                        <p className='textServices'>Web Development (React)</p>
+                        <img className='imageServices' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRl_6AuG1TxzQdGmZSN4pF02iLepIl6-4ucQ&s"></img>
 
-            <div className='services'>
-                <p className='textServices'>Service 1: Web Development (React)</p>
-                {/* <img className='imageServices' src="https://img.freepik.com/vector-gratis/estrella-metal-3d-aislada_1308-117760.jpg?semt=ais_hybrid&w=740&q=80"></img> */}
-
-            </div>
-
-            <div className='services'>
-                <p className='textServices'>Service 2: Python</p>
-                {/* <img className='imageServices' src="https://howtodrawforkids.com/wp-content/uploads/2022/07/Draw-a-flower-step-9.jpg"></img> */}
-            </div>
-
-            <div className='services'>
-                <p className='textServices'>Service 3: create a complete web page</p>
-                {/* <img className='imageServices' src="https://pngimg.com/d/circle_PNG4.png"></img> */}
-
-            </div>
-        </>
+                    </div>
+                </li>
+                <li>
+                    <div className='divServices'>
+                        <p className='textServices'>Website Redesigning</p>
+                        <img className='imageServices' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6Jb3clG95sdtwXGU_azHeajBaMm6OHLFAQ&s" style={{ marginLeft: '170px' }}></img>
+                    </div>
+                </li>
+                <li>
+                    <div className='divServices'>
+                        <p className='textServices'>Performance optimization</p>
+                        <img className='imageServices' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzcfwbXIuqi9DyUNc-AmLenXES3aHbJXdxdQnqszKWL9ebrDMe14vSEG7s1f9kDa1fPoQ&usqp=CAU"></img>
+                    </div>
+                </li>
+            </ul >
+        </div>
     )
 }

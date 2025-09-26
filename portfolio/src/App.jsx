@@ -18,17 +18,19 @@ import Footer from './Footer';
 export default function App() {
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/project" element={<Projects />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Home />} />
-      </Routes >
-      <Footer />
+      <div className='App'>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Home />} />
+        </Routes >
+        <Footer />
+      </div>
     </>
   );
 }
