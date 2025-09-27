@@ -1,7 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
 import './App.css';
 
+// Projects Page
 export default function Projects() {
 
     return (
@@ -29,8 +28,6 @@ export default function Projects() {
                     </div>
                 </li>
             </ul >
-
-
         </div>
     )
 }

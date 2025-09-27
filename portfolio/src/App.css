@@ -1,3 +1,4 @@
+/* Style for the background of all pages */
 .App {
   background-color: rgb(0, 81, 129);
   width: 100%;
@@ -46,7 +47,6 @@
   width: 100%;
 }
 
-
 .links {
   margin-left: 60px;
   color: lightblue;
@@ -60,11 +60,13 @@
 
 .titleHome {
   font-size: 40px;
-  padding: 40px;
-  margin-left: 30px;
-  margin-top: 395px;
+  margin-top: 335px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-top: 10px;
+  margin-left: 40px;
 }
 
 .textHome {
@@ -79,6 +81,9 @@
 
 .titleAbout {
   font-size: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
@@ -87,38 +92,46 @@
 .textAbout {
   font-size: 30px;
   margin-left: 40px;
-  padding: 20px;
+  padding: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
 }
 
 .imageAbout {
   height: 200px;
-  margin-left: 600px;
+  margin-left: 300px;
 }
 
 .divAbout {
   display: flex;
-  padding: 10px;
-  padding-left: 40px;
+  padding-left: 30px;
   margin-top: 395px;
+}
+
+.resume {
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+  text-decoration: underline;
 }
 
 /* Style for Projects Page */
 
 .titleProjects {
   font-size: 40px;
-  padding: 40px;
-  margin-left: 30px;
   margin-top: 395px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-left: 40px;
 }
 
 .textProjects {
   font-size: 30px;
   margin-left: 40px;
-  padding: 20px;
+  padding: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
 }
@@ -143,41 +156,49 @@
 
 .titleEducation {
   font-size: 40px;
-  padding: 40px;
-  margin-left: 30px;
-  margin-top: 395px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.divEducation {
+  margin-top: 395px;
+  margin-left: 40px;
 }
 
 .textEducation {
   font-size: 30px;
-  margin-left: 40px;
-  padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
 }
 
-.imageEducation {
-  height: 200px;
-  margin-left: 800px;
-  margin-top: 420px;
-  position: fixed;
+.subtitle {
+  font-size: 27px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+  list-style-type: none;
 }
 
 .listEducation {
-  font-size: 30px;
-  margin-left: 40px;
-  padding: 20px;
+  font-size: 24px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
+  margin-left: 40px;
+}
+
+.lists {
+  display: flex;
 }
 
 /* Style for Services Page */
 
 .titleServices {
   font-size: 40px;
-  padding: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 10px;
   margin-left: 30px;
   margin-top: 395px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -187,7 +208,7 @@
 .textServices {
   font-size: 30px;
   margin-left: 40px;
-  padding: 20px;
+  padding: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
 }
@@ -209,6 +230,7 @@
 }
 
 /* Style for Contact Page */
+
 .div {
   display: flex;
   margin-left: 150px;
@@ -220,7 +242,6 @@
   font-size: 40px;
   padding: 20px;
   margin-left: 30px;
-
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: lightblue;
 }
@@ -260,7 +281,6 @@
   border: '1px solid #ccc';
   border-radius: '8px';
   text-align: center;
-
 }
 
 .name {
@@ -332,7 +352,6 @@ button:active {
   transform: translateY(4px);
   color: lightblue;
 }
-
 
 /* Style for Footer */
 

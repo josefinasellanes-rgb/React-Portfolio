@@ -1,6 +1,3 @@
-import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react';
 import { Routes, Route } from "react-router-dom";
 import './App.css'
 import Home from './Home';
@@ -11,8 +8,6 @@ import Education from './Education';
 import Services from './Services';
 import Contact from './Contact';
 import Footer from './Footer';
-
-
 
 
 export default function App() {

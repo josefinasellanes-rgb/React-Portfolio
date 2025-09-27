@@ -1,15 +1,15 @@
-import React from 'react';
 import { useState } from 'react'
 import './App.css'
 import { useNavigate } from "react-router-dom";
 
+// Contact Me Page
 export default function Contact() {
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
-        contactNumber: "",
+        number: "",
         email: "",
         message: "",
     });
@@ -21,8 +21,8 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form Submitted:", formData); // for now, just logs info
-        navigate("/"); // redirect to Home Page
+        console.log("Form Submitted:", formData);
+        navigate("/home", { state: { flash: "Thanks! Your message was captured — I'll be in touch soon." } });
     };
 
     return (
@@ -36,20 +36,23 @@ export default function Contact() {
                     <p className='textContact'>Email: josefina@gmail.com</p>
                     <p className='textContact'>Phone Number: 416 765 4321</p>
                 </div>
-                <form className='form'>
+                <form className='form' onSubmit={handleSubmit}>
                     <p className='contact'>Contact Me</p>
                     <div className='inputs'>
                         <input
                             className='name'
                             type="text"
+                            name="firstName"
                             placeholder="First Name"
                             value={formData.firstName}
                             onChange={handleChange}
-                            required />
+                            required
+                        />
 
                         <input
                             className='lastname'
                             type="text"
+                            name="lastName"
                             placeholder="Last Name"
                             value={formData.lastName}
                             onChange={handleChange}
@@ -59,6 +62,7 @@ export default function Contact() {
                         <input
                             className='email'
                             type="email"
+                            name="email"
                             placeholder="Email Address"
                             value={formData.email}
                             onChange={handleChange}
@@ -68,6 +72,7 @@ export default function Contact() {
                         <input
                             className='number'
                             type="number"
+                            name="number"
                             placeholder="Phone Number"
                             value={formData.number}
                             onChange={handleChange}
@@ -75,6 +80,7 @@ export default function Contact() {
 
                         <textarea
                             className='textarea'
+                            name="message"
                             placeholder="Type Your Message"
                             value={formData.message}
                             onChange={handleChange}

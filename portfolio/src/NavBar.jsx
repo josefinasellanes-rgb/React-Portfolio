@@ -1,13 +1,10 @@
-import React from 'react';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
-
+// Navigation bar
 export default function NavBar() {
     return (
         <div className="navBar">
-
             <div className="topNav">
                 <StarLogoSymbol />
                 <h1 className="titleNav">
@@ -27,7 +24,8 @@ export default function NavBar() {
     );
 }
 
-const StarLogoSymbol = ({ size = '150px', color = 'gold' }) => (
+// Logo for Website
+const StarLogoSymbol = ({ size = '150px', color = 'white' }) => (
     <span style={{ fontSize: size, color: color }}>
         ★
     </span>
