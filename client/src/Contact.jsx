@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { useNavigate } from "react-router-dom";
+import { createContact } from "./api.js";
 
 // Contact Me Page
 export default function Contact() {
@@ -19,10 +20,13 @@ export default function Contact() {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form Submitted:", formData);
-        navigate("/home", { state: { flash: "Thanks! Your message was captured — I'll be in touch soon." } });
+        const data = await createContact(formData);
+        if (data) {
+            localStorage.setItem("lastContact", JSON.stringify({ ...formData, ts: new Date().toISOString() }));
+            navigate("/", { state: { toast: `I received your message, ${formData.firstName}. I'll reply soon!` } });
+        }
     };
 
     return (

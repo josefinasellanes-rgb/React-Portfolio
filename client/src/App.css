@@ -43,7 +43,8 @@
   color: lightblue;
   background-color: rgb(0, 81, 129);
   padding: 25px;
-  padding-left: 237px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 100%;
 }
 
@@ -152,6 +153,92 @@
   padding: 10px;
 }
 
+.projectdiv {
+  display: flex;
+}
+
+.project {
+  font-size: 30px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+  background-color: rgb(0, 81, 129);
+  width: fit-content;
+  margin-left: 80px;
+}
+
+.formProjects {
+  font-size: 15px;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+  border: 2px solid rgb(11, 66, 98);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 400px;
+}
+
+.inputsProjects {
+  padding: '10px';
+  border: '1px solid #ccc';
+  border-radius: '8px';
+  text-align: center;
+}
+
+.descriptionProjects {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.imagesProjects {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.buttonProjects {
+  font-size: 20px;
+  background-color: lightblue;
+  color: rgb(0, 81, 129);
+  padding: 10px;
+  margin-top: 430px;
+  margin-left: 150px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttonProjects1 {
+  font-size: 20px;
+  background-color: lightblue;
+  color: rgb(0, 81, 129);
+  padding: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+button:hover {
+  color: rgb(120, 197, 222);
+  background-color: rgb(0, 81, 129);
+}
+
+button:active {
+  background-color: lightblue;
+  box-shadow: 0 2px rgb(11, 66, 98);
+  transform: translateY(4px);
+  color: rgb(4, 41, 62);
+}
+
 /* Style for Education Page */
 
 .titleEducation {
@@ -167,6 +254,7 @@
   margin-top: 395px;
   margin-left: 40px;
 }
+
 
 .textEducation {
   font-size: 30px;
@@ -371,4 +459,188 @@ button:active {
   font-size: 15px;
   color: rgb(0, 81, 129);
   text-align: right;
+}
+
+/* Style for Login Page */
+
+.divLogin {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 395px;
+  padding: 30px;
+}
+
+.textLogin {
+  font-size: 30px;
+  margin-left: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.login {
+  font-size: 30px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+  background-color: rgb(0, 81, 129);
+  width: fit-content;
+  margin-left: 150px;
+}
+
+.formLogin {
+  font-size: 15px;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+  border: 2px solid rgb(11, 66, 98);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 450px;
+}
+
+.inputsLogin {
+  padding: '10px';
+  border: '1px solid #ccc';
+  border-radius: '8px';
+  text-align: center;
+}
+
+.emailLogin {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.passwordLogin {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.button {
+  font-size: 20px;
+  background-color: rgb(0, 81, 129);
+  color: lightblue;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+button:hover {
+  color: rgb(0, 81, 129);
+  background-color: rgb(120, 197, 222);
+}
+
+button:active {
+  background-color: rgb(4, 41, 62);
+  box-shadow: 0 2px rgb(11, 66, 98);
+  transform: translateY(4px);
+  color: lightblue;
+}
+
+/* Style for Register Page  */
+
+.divRegister {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 395px;
+  padding: 30px;
+}
+
+.textRegister {
+  font-size: 30px;
+  margin-left: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+
+.register {
+  font-size: 30px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+  background-color: rgb(0, 81, 129);
+  width: fit-content;
+  margin-left: 140px;
+}
+
+.formRegister {
+  font-size: 15px;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+  border: 2px solid rgb(11, 66, 98);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 450px;
+}
+
+.inputsRegister {
+  padding: '10px';
+  border: '1px solid #ccc';
+  border-radius: '8px';
+  text-align: center;
+}
+
+.nameRegister {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.emailRegister {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.passwordRegister {
+  font-size: 15px;
+  color: rgb(0, 81, 129);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+.button {
+  font-size: 20px;
+  background-color: rgb(0, 81, 129);
+  color: lightblue;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+button:hover {
+  color: rgb(0, 81, 129);
+  background-color: rgb(120, 197, 222);
+}
+
+button:active {
+  background-color: rgb(4, 41, 62);
+  box-shadow: 0 2px rgb(11, 66, 98);
+  transform: translateY(4px);
+  color: lightblue;
 }

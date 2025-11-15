@@ -3,34 +3,29 @@ GET http://localhost:3000/api/users
 
 ###
 
-
-# Create new user
-
-POST http://localhost:3000/api/users
-Content-Type: application/json
-
-{
-    "firstname": "Mickey Mouse",
-    "email": "mickeymouse@gmail.com",
-    "password": "password123"
-}
+GET http://localhost:3000/api/projects
 
 ###
 
-#Login
+DELETE  http://localhost:3000/api/projects
+###
 
-POST http://localhost:3000/api/users/login
-Content-Type: application/json
+GET http://localhost:3000/api/education
 
-{
-    "email": "mickeymouse@gmail.com",
-    "password": "password123"
-}
+###
+
+DELETE  http://localhost:3000/api/education
 
 ###
 
 
-#GET all users
+GET http://localhost:3000/api/services
 
-DELETE http://localhost:3000/api/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MDUxY2I2YzllNjc5NWVkZGYwMTkyMSIsImVtYWlsIjoibWlja2V5bW91c2VAZ21haWwuY29tIiwiaWF0IjoxNzYxOTQyNzEwLCJleHAiOjE3NjQ1MzQ3MTB9.kpDA9jmY7VGXfHTH0_HeQYI_hhU3kwgePlVqiO1oQbw
+###
+
+DELETE  http://localhost:3000/api/services
+
+###
+
+
+GET http://localhost:3000/api/contacts

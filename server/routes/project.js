@@ -1,5 +1,6 @@
 import express from "express";
-// import authMiddleware from "../middlewares/auth.js";
+import authMiddleware from "../middlewares/auth.js";
+import adminOnly from "../middlewares/authAdmin.js";
 import {
     getAllProjects,
     getProjectById,

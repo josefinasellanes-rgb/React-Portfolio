@@ -1,11 +1,62 @@
 import './App.css';
+import { useNavigate } from "react-router-dom";
+import { deleteServices } from "../src/api.js";
+import { useState, useEffect } from "react";
 
 // Services Page
-export default function Services() {
+
+export const Services = ({ user, services = [], refreshServices }) => {
+    const navigate = useNavigate();
+
+    const handleCreateServices = () => {
+        navigate("/services-details/");
+    }
+
+    const handleUpdateServices = (id) => {
+        navigate(`/services-details/${id}`);
+    }
+
+    const handleDeleteServices = async (id) => {
+        const data = await deleteServices(id);
+        if (data) if (refreshServices) refreshServices();
+    }
+
 
     return (
         <div className='wrapper'>
-            <h1 className='titleServices'>Services</h1>
+            <div className='projectdiv'>
+                <h1 className='titleProjects'>Services</h1>
+                {user && user.role === "admin" && (
+                    <button className="buttonProjects" onClick={handleCreateServices}>Create Services</button>
+                )}
+                <p className='textProjects'>These are my services</p>
+            </div>
+
+            <div className='projects'>
+                {
+                    services.length > 0 ? (
+                        services.map((p, index) => (
+                            <li key={index}>
+                                <div className='divProjects'>
+                                    <p className='textProjects'>{p.title}</p>
+                                    <img className='imageProjects' style={{ marginLeft: '200px' }} src={p.image}></img>
+                                    {user && user.role === "admin" && (
+                                        <div>
+                                            <button className='buttonProjects1' onClick={() => handleUpdateServices(p._id)}>Edit</button>
+                                            <button className='buttonProjects1' onClick={() => handleDeleteServices(p._id)}>Delete</button>
+                                        </div>
+                                    )}
+                                </div>
+                            </li>
+                        ))
+                    ) : (
+                        <div>
+                            <p>No services found</p>
+                        </div>
+
+                    )
+                }
+                {/*                 
             <p className='textServices'>These are some of my services:</p>
             <ul className='services'>
                 <li>
@@ -27,7 +78,9 @@ export default function Services() {
                         <img className='imageServices' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzcfwbXIuqi9DyUNc-AmLenXES3aHbJXdxdQnqszKWL9ebrDMe14vSEG7s1f9kDa1fPoQ&usqp=CAU"></img>
                     </div>
                 </li>
-            </ul >
-        </div>
+            </ul > */}
+            </div>
+        </div >
     )
 }
+export default Services;
