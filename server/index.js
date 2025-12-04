@@ -2,6 +2,11 @@ import express from "express";
 import morgan from "morgan";
 import mongoose from "mongoose";
 import "dotenv/config";
+import path from 'path';
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 mongoose.connect(process.env.MONGODB_URI);
 const connection = mongoose.connection;
@@ -28,6 +33,12 @@ app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => {
     res.json({ message: "Welcome to My Portfolio application." });
+});
+
+
+app.use(express.static(path.join(__dirname, '../client/dist')));
+app.get(/^(?!\/api).*/, (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'))
 });
 
 app.listen(3000);
